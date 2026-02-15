@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile) h-168 w-full bg-purple-100 gap-y-5 gap-x-5 justify-items-center text-center">
+    <section className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile) min-h-168 w-full gap-y-5 gap-x-5 justify-items-center text-center">
       <div className="w-45 h-68 rounded-t-full bg-amber-300 overflow-hidden row-start-2 row-end-4 col-start-4 col-end-10">
         <Image
           src="/images/image-1.jpg"
@@ -20,7 +20,7 @@ function Hero() {
       <a className="row-start-7 row-end-8 col-start-4 col-end-10 text-small uppercase border p-2">
         connect with me
       </a>
-    </div>
+    </section>
   );
 }
 

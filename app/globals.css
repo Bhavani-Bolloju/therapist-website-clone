@@ -14,7 +14,7 @@
   --heading-3-size: clamp(1.75rem, 2.5vw, 2.5rem); /* 28→40px */
   --heading-4-size: clamp(1.25rem, 1.5vw, 2rem); /* 20→32px */
 
-  --large-text-size: clamp(1.25rem, 3vw, 1.5rem); /* 20px → 24px */
+  --large-text-size: clamp(1.2rem, 3.5vw, 1.5rem); /* 20px → 24px */
   --normal-text-size: clamp(1rem, 2.5vw, 1.2rem); /* 16px → 19.2px */
   --small-text-size: clamp(0.875rem, 2vw, 1rem); /* 14px → 16px */
   --normal-meta-size: clamp(0.75rem, 1.5vw, 0.8rem); /* 12px → 12.8px */
@@ -28,8 +28,7 @@
   /*colors*/
   --color-background: var(--white-hsl);
   --color-foreground: var(--black-hsl);
-
-  /*font-size*/
+  --color-light-Accent: var(--lightAccent-hsl); /*font-size*/
   --text-fs-h1: var(--heading-1-size);
   --text-fs-h2: var(--heading-2-size);
   --text-fs-h3: var(--heading-3-size);
@@ -47,17 +46,21 @@
   --breakpoint-mobile-nav: 50rem;
 
   /*layout*/
-  --grid-cols-mobile: repeat(12, 1fr);
-  --grid-rows-mobile: 2rem repeat(10, auto) 1fr;
+  --grid-cols-mobile: repeat(12, auto);
+  --grid-rows-mobile: 2rem repeat(10, auto) 2rem;
 
   /*line-height*/
-  --leading-body: calc(var(--text-normal-text) * var(--lh-body));
-  --leading-header: calc(var(--text-fs-h1) * var(--lh-heading));
+  --leading-body: calc(var(--text-large) * var(--lh-body));
+  --leading-header-1: calc(var(--text-fs-h1) * var(--lh-heading));
 }
 
 @layer base {
   h1 {
-    @apply text-fs-h1 font-medium leading-header;
+    @apply text-fs-h1 font-medium leading-header-1;
+  }
+
+  h2 {
+    @apply text-fs-h2 font-medium;
   }
 }
 
