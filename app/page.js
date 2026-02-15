@@ -1,8 +1,12 @@
+import Header from "./components/Header";
+import Main from "./components/Main";
+
 export default function Home() {
   return (
-    <main className="">
-      <h1 className="">First title of the section</h1>
-    </main>
+    <div className="font-outfit">
+      <Header />
+      <Main />
+    </div>
   );
 }
 
