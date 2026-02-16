@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --white-hsl: hsl(30, 55.56%, 96.47%); /* Off-white bg: warm cream tint */
-  --black-hsl: hsl(95.29, 45.95%, 14.51%); /* Deep charcoal text */
+  --surface-0: #fbf6f1;
+  --surface-1: #e5e0da;
+  --surface-2: #c2bfcb;
+  --surface-accent: #7e7b46;
 
-  /* Primary Accents: */
-  --accent-hsl: hsl(255, 10.34%, 77.25%); /* Lavender-gray (main accent) */
-  --lightAccent-hsl: hsl(32.73, 17.46%, 87.65%); /* Warm light beige */
-  --darkAccent-hsl: hsl(56.79, 28.57%, 38.43%); /* Muted olive-green */
+  --text-primary: #223614;
 
   --heading-1-size: clamp(2.5rem, 5vw + 1rem, 4.5rem); /* 40→72px */
   --heading-2-size: clamp(2rem, 3vw + 0.5rem, 3rem); /* 32→48px */
@@ -26,9 +25,20 @@
 
 @theme {
   /*colors*/
-  --color-background: var(--white-hsl);
-  --color-foreground: var(--black-hsl);
-  --color-light-Accent: var(--lightAccent-hsl); /*font-size*/
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-accent: var(--surface-accent);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-inverse: var(--surface-0);
+
+  /*font-family*/
+  --font-body: var(--font-monts);
+  --font-outfit: var(--font-outfit);
+
+  /*font-size*/
+
   --text-fs-h1: var(--heading-1-size);
   --text-fs-h2: var(--heading-2-size);
   --text-fs-h3: var(--heading-3-size);
@@ -37,10 +47,6 @@
   --text-normal: var(--normal-text-size);
   --text-small: var(--small-text-size);
   --text-extra-small: var(--normal-meta-size);
-
-  /*font-family*/
-  --font-body: var(--font-monts);
-  --font-outfit: var(--font-outfit);
 
   /*breakpoints*/
   --breakpoint-mobile-nav: 50rem;
@@ -70,6 +76,24 @@
   --normal-text-size: 1.2rem; -- 19.2px (body default) 
   --small-text-size: 1rem; -- 16px 
   --normal-meta-size: 0.8rem; -- 12.8px (caps, labels) 
+
+*/
+
+/*
+
+ ---
+surface-0      #fbf6f1   (main page background)
+surface-1      #e5e0da   (light section bg)
+surface-2      #c2bfcb   (muted section bg)
+surface-accent #7e7b46   (strong CTA section)
+overlay-dark   #22361480 (transparent overlay)
+
+text-primary   #223614
+text-inverse   #fbf6f1
+text-white     #ffffff
+
+
+
 
 */
 

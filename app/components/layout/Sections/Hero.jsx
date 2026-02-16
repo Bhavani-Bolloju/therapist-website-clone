@@ -1,10 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
+import Paragraph from "../../ui/Paragraph";
+import DisplayHeading from "../../ui/DisplayHeading";
+import ButtonPrimary from "../../ui/ButtonPrimary";
+
 function Hero() {
   return (
     <section className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile) min-h-168 w-full gap-y-5 gap-x-5 justify-items-center text-center">
-      <div className="w-45 h-68 rounded-t-full bg-amber-300 overflow-hidden row-start-2 row-end-4 col-start-4 col-end-10">
+      <div className="w-45 h-68 rounded-t-full bg-amber-300 overflow-hidden row-start-2 row-end-4 col-start-4 col-end-10 ">
         <Image
           src="/images/image-1.jpg"
           width={200}
@@ -14,12 +18,12 @@ function Hero() {
         ></Image>
       </div>
       <div className="row-start-4 row-end-7 col-start-4 col-end-10">
-        <h1 className="mb-5">Live your life in full bloom</h1>
-        <p className="text-large">Therapy for Adults in Minneapolis, MN.</p>
+        <DisplayHeading>Live your life in full bloom</DisplayHeading>
+        <Paragraph>Therapy for Adults in Minneapolis, MN.</Paragraph>
       </div>
-      <a className="row-start-7 row-end-8 col-start-4 col-end-10 text-small uppercase border p-2">
-        connect with me
-      </a>
+      <div className="row-start-7 row-end-8 col-start-4 col-end-10 ">
+        <ButtonPrimary>connect with me</ButtonPrimary>
+      </div>
     </section>
   );
 }
