@@ -16,7 +16,7 @@ function EmpatheticIntro() {
           className="w-full max-h-70 object-cover"
         ></Image>
       </div>
-      <div className="row-start-4 row-end-11 col-start-2 col-end-11">
+      <div className="row-start-4 row-end-11 col-start-2 col-end-12">
         <PageHeading>Live a fulfilling life.</PageHeading>
         <Paragraph>
           Life can be challenging—especially when you&apos;re trying to balance
@@ -27,7 +27,7 @@ function EmpatheticIntro() {
           challenges, but I want you to know that I&apos;m here to help.
         </Paragraph>
       </div>
-      <div className="row-start-11 -row-end-1 col-start-1 col-end-12 text-center text-normal uppercase hover:bg-red-200 self-center h-full">
+      <div className="row-start-11 -row-end-1 col-start-1 -col-end-1 text-center text-normal uppercase hover:bg-red-200 self-center h-full">
         <ButtonFullWidth>get in touch</ButtonFullWidth>
       </div>
     </section>
