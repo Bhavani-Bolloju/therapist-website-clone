@@ -8,7 +8,7 @@ import ButtonPrimary from "../../ui/ButtonPrimary";
 function Hero() {
   return (
     <section className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile) min-h-168 w-full gap-y-5 gap-x-5 justify-items-center text-center">
-      <div className="w-45 h-68 rounded-t-full bg-amber-300 overflow-hidden row-start-2 row-end-4 col-start-4 col-end-10 ">
+      <div className="w-45 h-68 rounded-t-full overflow-hidden row-start-2 row-end-4 col-start-4 col-end-10 ">
         <Image
           src="/images/image-1.jpg"
           width={200}

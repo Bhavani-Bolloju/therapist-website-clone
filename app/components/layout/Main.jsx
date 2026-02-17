@@ -4,6 +4,7 @@ import Hero from "./Sections/Hero";
 import EmpatheticIntro from "./Sections/EmpatheticIntro";
 import Specialties from "./Sections/Specialties";
 import SupportSection from "./Sections/SupportSection";
+import ReassuranceSection from "./Sections/ReassuranceSection";
 
 function Main() {
   return (
@@ -12,6 +13,7 @@ function Main() {
       <EmpatheticIntro />
       <Specialties />
       <SupportSection />
+      <ReassuranceSection />
     </main>
   );
 }

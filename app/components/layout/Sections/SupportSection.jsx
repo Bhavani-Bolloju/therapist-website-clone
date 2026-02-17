@@ -6,7 +6,7 @@ import ButtonFullWidth from "../../ui/ButtonFullWidth";
 
 function SupportSection() {
   return (
-    <div class="grid grid-cols-12 gap-6 bg-surface-2">
+    <div className="grid grid-cols-12 gap-6 bg-surface-2">
       <div className="col-span-12 aspect-5/3">
         <Image
           src="/images/image-6.jpg"
