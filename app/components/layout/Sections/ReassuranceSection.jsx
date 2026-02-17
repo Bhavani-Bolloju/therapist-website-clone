@@ -7,7 +7,7 @@ import PageHeading from "../../ui/PageHeading";
 
 function ReassuranceSection() {
   return (
-    <section className="grid grid-rows-[repeat(8, minmax(6vh, auto))] grid-cols-8 gap-[3vh] justify-items-start px-[5vw] py-[5vh]">
+    <section className="grid grid-rows-[repeat(8, minmax(6vh, auto))] grid-cols-8 gap-[3vh] justify-items-start px-[5vw] py-[6vh] bg-surface-1">
       <div className="row-start-1 row-end-6 col-start-1 col-span-8  rounded-t-full overflow-hidden justify-self-center">
         <Image
           src="/images/image-7.jpg"
