@@ -1,7 +1,7 @@
 import React from "react";
 
-function SectionHeading() {
-  return <h3></h3>;
+function SectionHeading({ children }) {
+  return <h3>{children}</h3>;
 }
 
 export default SectionHeading;
