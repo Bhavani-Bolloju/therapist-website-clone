@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeading from "../ui/SectionHeading";
 import { useState, useRef, useEffect } from "react";
 
-function FAQ({ title, content }) {
+function FAQAccordion({ title, content }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [maxHeight, setMaxHeight] = useState(0);
 
@@ -49,7 +49,7 @@ function FAQ({ title, content }) {
   );
 }
 
-export default FAQ;
+export default FAQAccordion;
 
 /*
 

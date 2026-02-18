@@ -1,8 +1,16 @@
 import React from "react";
 
-function ButtonPrimary({ children }) {
+function ButtonPrimary({ children, variantType = "dark" }) {
+  const variants = {
+    dark: "text-text-primary hover:text-text-inverse hover:bg-text-primary  border-text-primary",
+    light:
+      "text-text-inverse hover:text-text-primary hover:bg-text-inverse border-text-inverse"
+  };
+
   return (
-    <a className="text-small uppercase font-medium inline-flex items-center justify-center gap-2 border border-text-primary px-5 py-3 hover:bg-text-primary hover:text-text-inverse hover:cursor-pointer">
+    <a
+      className={`text-small uppercase font-medium inline-flex items-center justify-center gap-2 border border-inherit px-5 py-3 hover:cursor-pointer ${variants[variantType]} transition-all duration-200 ease-in `}
+    >
       <span>{children}</span>
       <span>
         <svg
