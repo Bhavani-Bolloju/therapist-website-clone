@@ -59,6 +59,8 @@
   /*line-height*/
   --leading-body: calc(var(--text-large) * var(--lh-body));
   --leading-header-1: calc(var(--text-fs-h1) * var(--lh-heading));
+  --leading-header-2: calc(var(--text-fs-h2) * var(--lh-heading));
+  --leading-header-3: calc(var(--text-fs-h3) * var(--lh-heading));
 }
 
 @layer base {
@@ -67,7 +69,10 @@
   }
 
   h2 {
-    @apply text-fs-h2 font-medium;
+    @apply text-fs-h2 font-medium leading-header-2;
+  }
+  h3 {
+    @apply text-fs-h3 font-medium leading-header-3;
   }
 }
 

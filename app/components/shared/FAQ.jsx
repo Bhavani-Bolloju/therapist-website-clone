@@ -21,9 +21,9 @@ function FAQ({ title, content }) {
   }, [refEl]);
 
   return (
-    <li className="list-none py-5 flex flex-col gap-2 items-start border-b">
+    <li className="list-none py-4 flex flex-col gap-2 items-start border-b border-text-primary/50">
       <button
-        className="flex gap-8 items-center justify-start"
+        className="flex gap-[4vw] items-center justify-start hover:cursor-pointer"
         onClick={handleCollapse}
       >
         <div className="relative w-7.5 h-7.5">
@@ -41,7 +41,7 @@ function FAQ({ title, content }) {
           opacity: isCollapsed ? 0 : 1
         }}
       >
-        <p className="py-5" ref={refEl}>
+        <p className="py-5 text-large" ref={refEl}>
           {content}
         </p>
       </div>
