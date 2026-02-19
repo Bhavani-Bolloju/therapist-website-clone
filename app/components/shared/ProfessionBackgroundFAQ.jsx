@@ -1,29 +1,44 @@
-import React, { useState } from "react";
-import AccordionItem from "./AccordionItem";
+"use client";
 
-function ProfessionBackgroundFAQ() {
+import React from "react";
+import SectionHeading from "../ui/SectionHeading";
+import { useState } from "react";
+
+import ExpandableContent from "./ExpandableContent";
+
+function ProfessionBackgroundFAQ({ title, content }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
-
   const handleCollapse = function () {
     setIsCollapsed((prev) => !prev);
   };
   return (
-    <AccordionItem content={content} isCollapsed={isCollapsed}>
+    <li className="list-none py-3 flex flex-col gap-2 items-between border-b border-text-primary/50 w-full">
       <button
-        className="flex gap-[4vw] flex-row items-center justify-start hover:cursor-pointer"
+        className="flex gap-[3vw] flex-row items-center justify-between hover:cursor-pointer"
         onClick={handleCollapse}
       >
-        <p>{title}</p>
-        <div className="relative w-6.5 h-6.5">
-          <span className="w-full h-[1.5px] bg-text-primary/70 inline-block"></span>
+        <p className="capitalize text-fs-h4">{title}</p>
+        <div className="relative w-6 h-6">
+          <span className="w-full h-px bg-text-primary inline-block absolute left-1/2 -translate-x-1/2 top-1/2"></span>
           <span
-            className={`w-full h-[1.2px]  inline-block absolute left-0 top-1/2  -translate-y-1/2 transition-all origin-center duration-200 ease-linear ${isCollapsed ? "rotate-90 bg-text-primary/70" : "rotate-0 bg-transparent"}`}
+            className={`w-px h-full inline-block absolute left-1/2 -translate-1/2 top-1/2 transition-all duration-200 ease-linear bg-text-primary ${isCollapsed ? "rotate-0 opacity-100" : "rotate-90 opacity-50"}`}
           ></span>
         </div>
       </button>
-    </AccordionItem>
+      <ExpandableContent content={content} isCollapsed={isCollapsed} />
+      
+    </li>
   );
 }
 
 export default ProfessionBackgroundFAQ;
+
+/*
+
+
+
+
+
+
+*/
 
