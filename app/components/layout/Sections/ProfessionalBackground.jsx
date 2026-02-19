@@ -4,7 +4,7 @@ import ProfessionBackgroundFAQ from "../../shared/ProfessionBackgroundFAQ";
 
 function ProfessionalBackground() {
   return (
-    <section className="bg-surface-1 py-[10vh] px-[10vw] flex flex-col justify-center ">
+    <section className="bg-surface-1 py-[10vh] px-[10vw] flex flex-col justify-center items-center">
       <PageHeading>Professional background</PageHeading>
       <ul className="border-t border-text-primary/50 mt-[5vh]">
         <ProfessionBackgroundFAQ

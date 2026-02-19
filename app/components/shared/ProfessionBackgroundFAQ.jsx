@@ -25,8 +25,9 @@ function ProfessionBackgroundFAQ({ title, content }) {
           ></span>
         </div>
       </button>
-      <ExpandableContent content={content} isCollapsed={isCollapsed} />
-      
+      <div className="pl-10">
+        <ExpandableContent content={content} isCollapsed={isCollapsed} />
+      </div>
     </li>
   );
 }
