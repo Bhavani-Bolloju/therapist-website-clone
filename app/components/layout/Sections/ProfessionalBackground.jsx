@@ -4,7 +4,11 @@ import Paragraph from "../../ui/Paragraph";
 import ButtonPrimary from "../../ui/ButtonPrimary";
 
 function ProfessionalBackground() {
-  return <section>Professional background</section>;
+  return (
+    <section>
+      <PageHeading>Professional background</PageHeading>
+    </section>
+  );
 }
 
 export default ProfessionalBackground;

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import PageHeading from "../../ui/PageHeading";
-import FAQAccordion from "../../shared/FAQAccordion";
+import FAQItem from "../../shared/FAQItem";
+import SectionHeading from "../../ui/SectionHeading";
 
 function FAQsSection() {
   return (
@@ -20,20 +21,18 @@ function FAQsSection() {
       </div>
       <div className="row-start-6 col-start-1 col-span-8">
         <ul className="border-t border-text-primary/50">
-          <FAQAccordion
+          <FAQItem
+            content="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old"
             title="Do you take insurance?"
-            content="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
-          />
-
-          <FAQAccordion
+          ></FAQItem>
+          <FAQItem
+            content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable"
             title="What are your rates?"
-            content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
-          />
-
-          <FAQAccordion
-            title="Do you have any openings?"
+          ></FAQItem>
+          <FAQItem
             content="The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32"
-          />
+            title="Do you have any openings?"
+          ></FAQItem>
         </ul>
       </div>
     </section>
