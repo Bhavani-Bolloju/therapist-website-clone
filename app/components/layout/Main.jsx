@@ -8,6 +8,7 @@ import ReassuranceSection from "./Sections/ReassuranceSection";
 import FAQsSection from "./Sections/FAQsSection";
 import ProfessionalBackground from "./Sections/ProfessionalBackground";
 import BookingCTASection from "./Sections/BookingCTASection";
+import Footer from "./Footer";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       <FAQsSection />
       <ProfessionalBackground />
       <BookingCTASection />
+      <Footer />
     </main>
   );
 }
