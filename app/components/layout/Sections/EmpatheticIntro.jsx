@@ -6,18 +6,20 @@ import ButtonFullWidth from "../../ui/ButtonFullWidth";
 
 function EmpatheticIntro() {
   return (
-    <section className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile) w-full gap-y-5 gap-x-5 bg-surface-1">
-      <div className="row-start-1 row-end-3 col-start-1 col-span-12">
+    <section className="grid grid-cols-12 w-full  bg-surface-1 gap-y-[4vh]">
+      <div className="row-start-1 row-span-1 col-start-1 col-span-12 aspect-5/3">
         <Image
           src="/images/image-2.jpg"
           width={600}
           height={300}
           alt="therapy image"
-          className="w-full max-h-70 object-cover"
+          className="w-full object-cover"
         ></Image>
       </div>
-      <div className="row-start-4 row-end-11 col-start-2 col-end-12">
+      <div className="col-start-2 col-end-11">
         <PageHeading>Live a fulfilling life.</PageHeading>
+      </div>
+      <div className="col-start-2 col-end-11">
         <Paragraph>
           Life can be challenging—especially when you&apos;re trying to balance
           your personal and professional life.{" "}
@@ -27,7 +29,7 @@ function EmpatheticIntro() {
           challenges, but I want you to know that I&apos;m here to help.
         </Paragraph>
       </div>
-      <div className="row-start-11 -row-end-1 col-start-1 -col-end-1 text-center text-normal uppercase hover:bg-red-200 self-center h-full">
+      <div className="col-start-1 -col-end-1 text-center text-normal uppercase self-center h-full">
         <ButtonFullWidth>get in touch</ButtonFullWidth>
       </div>
     </section>

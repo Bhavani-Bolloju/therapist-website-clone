@@ -11,7 +11,9 @@ function ButtonPrimary({ children, variantType = "dark" }) {
     <a
       className={`text-small uppercase font-medium inline-flex items-center justify-center gap-2 border border-inherit px-5 py-3 hover:cursor-pointer ${variants[variantType]} transition-all duration-200 ease-in `}
     >
-      <span>{children}</span>
+      <span className="flex flex-wrap items-center justify-center gap-1 text-center">
+        {children}
+      </span>
       <span>
         <svg
           xmlns="http://www.w3.org/2000/svg"

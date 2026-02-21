@@ -10,7 +10,7 @@ function Nav() {
   };
 
   return (
-    <nav className="w-full h-full bg-red-400 flex items-center mobile-nav:justify-end">
+    <nav className="w-full h-full flex items-center mobile-nav:justify-end">
       <button className="max-mobile-nav:flex hidden" onClick={handleNav}>
         Ham btn
       </button>

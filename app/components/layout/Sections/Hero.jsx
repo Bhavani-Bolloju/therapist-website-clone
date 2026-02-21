@@ -7,8 +7,8 @@ import ButtonPrimary from "../../ui/ButtonPrimary";
 
 function Hero() {
   return (
-    <section className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile) min-h-168 w-full gap-y-5 gap-x-5 justify-items-center text-center">
-      <div className="w-45 h-68 rounded-t-full overflow-hidden row-start-2 row-end-4 col-start-4 col-end-10 ">
+    <section className="grid grid-cols-(--grid-cols-mobile) grid-rows-(--grid-rows-mobile-hero) gap-y-[4vh]">
+      <div className="w-45 h-68 rounded-t-full overflow-hidden row-start-2 row-span-3 col-start-1 col-span-8 justify-self-center">
         <Image
           src="/images/image-1.jpg"
           width={200}
@@ -17,12 +17,23 @@ function Hero() {
           className="w-full h-full object-cover"
         ></Image>
       </div>
-      <div className="row-start-4 row-end-7 col-start-4 col-end-10">
-        <DisplayHeading>Live your life in full bloom</DisplayHeading>
-        <Paragraph>Therapy for Adults in Minneapolis, MN.</Paragraph>
+      <div className="row-start-5 row-span-2 col-start-2 col-end-8 text-center">
+        <DisplayHeading>
+          Ease Anxiety & Heal Trauma in Santa Monica
+        </DisplayHeading>
       </div>
-      <div className="row-start-7 row-end-8 col-start-4 col-end-10 ">
-        <ButtonPrimary>connect with me</ButtonPrimary>
+      <div className="row-start-7 row-span-1 col-start-2 col-end-8 text-center">
+        <Paragraph>
+          You can ease exhaustion from overthinking and tension in a safe space.
+          In Santa Monica, I guide high-achievers like you to calm, clarity, and
+          resilience.
+        </Paragraph>
+      </div>
+      <div className="row-start-8 row-span-1 col-start-1 col-span-8 justify-self-center">
+        <ButtonPrimary>
+          <span>Ready to feel calmer? </span>
+          <span>Let&apos;s talk.</span>
+        </ButtonPrimary>
       </div>
     </section>
   );

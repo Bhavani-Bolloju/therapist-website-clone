@@ -52,8 +52,9 @@
   --breakpoint-mobile-nav: 50rem;
 
   /*layout*/
-  --grid-cols-mobile: repeat(12, auto);
-  --grid-rows-mobile: 2rem repeat(10, auto) 2rem;
+  --grid-cols-mobile: 2vw repeat(6, auto) 2vw;
+  --grid-rows-mobile-hero: repeat(10, minmax(4vh, auto));
+  --grid-rows-mobile-empathetic: repeat(8, minmax(4vh, auto));
   --grid-cols-specialties: repeat(auto-fit, minmax(260px, 1fr));
 
   /*line-height*/
